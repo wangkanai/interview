@@ -67,7 +67,7 @@ There are currently 5 shortlist candidates, and I will be interviewing all candi
 Thursday 8th August 2024
 1.  9:00 - 10:30
 2. 11:00 - 12:30
-3. 13:00 - 14:00
+3. 13:00 - 14:00  Malkesh Mangukiya
 4. 14:30 - 16:00  Muhammad Arif
 5. 17:00 - 18:30
 
