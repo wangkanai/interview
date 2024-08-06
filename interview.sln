@@ -10,6 +10,21 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".solutions", ".solutions", 
 		README.md = README.md
 	EndProjectSection
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Aspire", "Aspire", "{6F5B99C2-6141-4118-8882-E373DDF2B3F4}"
+	ProjectSection(SolutionItems) = preProject
+		Aspire\readme.md = Aspire\readme.md
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Microservices", "Microservices", "{4FF394A7-7EFC-4B99-9EB6-388C5BD95385}"
+	ProjectSection(SolutionItems) = preProject
+		Microservices\readme.md = Microservices\readme.md
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Portal", "Portal", "{96D5367A-FE5B-47F3-A24E-ED4A9DC7813B}"
+	ProjectSection(SolutionItems) = preProject
+		Portal\readme.md = Portal\readme.md
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
