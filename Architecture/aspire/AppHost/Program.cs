@@ -12,13 +12,15 @@ var sqlPgSql = builder.AddPostgres(ResourceConstants.SqlPgSql, null, sqlPassword
 
 var dbPortal = sqlPgSql.AddDatabase(SchemaConstants.Portal);
 
-builder.AddProject<Projects.Wangkanai_Interview_Portal_Migration>(MigrationConstants.Portal)
-       .WithReference(dbPortal)
-       .WithReference(seq);
+var migration = builder.AddProject<Projects.Wangkanai_Interview_Portal_Migration>(MigrationConstants.Portal)
+                       .WithReference(dbPortal)
+                       .WithReference(seq);
 
 builder.AddProject<Projects.Wangkanai_Interview_Portal>(ResourceConstants.WebPortal)
        .WithReference(dbPortal)
        .WithReference(seq)
-       .WithExternalHttpEndpoints();
+       .WithExternalHttpEndpoints()
+       .WaitFor(dbPortal)
+       .WaitForCompletion(migration);
 
 builder.Build().Run();
