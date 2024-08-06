@@ -34,5 +34,11 @@ public class PostConfiguration : IEntityTypeConfiguration<Post>
 
       builder.Property(post => post.Updated)
              .NpgValueGeneratedOnAddOrUpdate();
+      
+      builder.HasOne(post => post.Blog)
+             .WithMany(blog => blog.Posts)
+             .HasForeignKey(post => post.Id)
+             .IsRequired()
+             .OnDelete(DeleteBehavior.Cascade);
    }
 }

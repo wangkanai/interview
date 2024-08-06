@@ -13,7 +13,7 @@ public class BlogConfiguration : IEntityTypeConfiguration<Blog>
    {
       builder.HasIndex(blog => blog.Title)
              .IsUnique();
-      
+
       builder.Property(blog => blog.Title)
              .HasMaxLength(100)
              .IsRequired();
