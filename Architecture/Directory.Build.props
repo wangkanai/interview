@@ -1,6 +1,6 @@
 <Project>
-  <PropertyGroup>
-
-
-  </PropertyGroup>
+	<PropertyGroup>
+		<Company>Wangkanai</Company>
+		<Description>Code Interview</Description>
+	</PropertyGroup>
 </Project>
