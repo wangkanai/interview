@@ -22,7 +22,9 @@ During our code interview, you will be building a solution for managing projects
 
 The development must be [.NET 8.0](https://learn.microsoft.com/en-us/dotnet/core/whats-new/dotnet-8/overview) using [C# 12](https://learn.microsoft.com/en-us/dotnet/csharp/whats-new/csharp-12) projects. We will also be using [.NET Aspire](https://learn.microsoft.com/en-us/dotnet/aspire/fundamentals/app-host-overview) to be our orchestration. The front end will be developed with  [Blazor](https://learn.microsoft.com/en-us/aspnet/core/blazor/?view=aspnetcore-8.0) using both hosting model of [Blazor Server](https://learn.microsoft.com/en-us/aspnet/core/blazor/hosting-models?view=aspnetcore-8.0#blazor-server) and [Blazor WebAssembly](https://learn.microsoft.com/en-us/aspnet/core/blazor/hosting-models?view=aspnetcore-8.0#blazor-webassembly). For authentication and authorization we will be using [ASP.NET Core Identity](https://learn.microsoft.com/en-us/aspnet/core/security/authentication/identity?view=aspnetcore-8.0)
 
-The microservices will be develop in [ASP.NET Core Web Api](https://learn.microsoft.com/en-us/aspnet/core/tutorials/first-web-api?view=aspnetcore-8.0&tabs=visual-studio) with feature base folder. You will also need to have unit tests, integration tests, and functional tests. We will being using the XUnit testing framework.
+The microservices will be develop in [ASP.NET Core Web Api](https://learn.microsoft.com/en-us/aspnet/core/tutorials/first-web-api?view=aspnetcore-8.0&tabs=visual-studio) with feature base folder. The persistence database will be [PostgreSql](https://www.postgresql.org/)
+
+You will also need to have unit tests, integration tests, and functional tests. We will being using the [XUnit](https://xunit.net/) testing framework.
 
 ## Solution setup
 
@@ -32,6 +34,15 @@ I have create the base working solution for you already with basic folder struct
 2. Microservices
 3. Portal
 
+Our vertical slice architecture will be setup in the following project structure;
+
+1. Domain
+2. Application
+3. Infrastructure
+4. Endpoint(Server)
+5. Testing
+
 ## Bonus points
 
 1. [Centrally package management](https://learn.microsoft.com/en-us/nuget/consume-packages/central-package-management)
+2. [Seq Centralized structured Logs](https://datalust.co/seq)
