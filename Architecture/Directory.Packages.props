@@ -1,112 +1,113 @@
 <Project>
-	<PropertyGroup>
-		<ManagePackageVersionsCentrally>true</ManagePackageVersionsCentrally>
-		<FrameworkVersion>8.0.7</FrameworkVersion>
-		<EntityFrameworkVersion>8.0.7</EntityFrameworkVersion>
-		<AspireVersion>8.1.0</AspireVersion>
-	</PropertyGroup>
-	<ItemGroup>
-		<!--sourcelink-->
-		<PackageVersion Include="Microsoft.SourceLink.AzureRepos.Git" Version="8.0.0" />
-		<PackageVersion Include="Microsoft.SourceLink.GitHub" Version="8.0.0" />
-		<!--framework-->
-		<PackageVersion Include="Microsoft.AspNetCore.OpenApi" Version="$(FrameworkVersion)" />
-		<PackageVersion Include="Microsoft.AspNetCore.Components.WebAssembly" Version="$(FrameworkVersion)" />
-		<PackageVersion Include="Microsoft.AspNetCore.Components.WebAssembly.Server" Version="$(FrameworkVersion)" />
-		<PackageVersion Include="Microsoft.AspNetCore.Components.WebAssembly.DevServer" Version="$(FrameworkVersion)" />
-		<PackageVersion Include="Microsoft.AspNetCore.Components.WebAssembly.Authentication" Version="$(FrameworkVersion)" />
-		<PackageVersion Include="Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore" Version="$(FrameworkVersion)" />
-		<PackageVersion Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="$(FrameworkVersion)" />
-		<!--aspire-->
-		<PackageVersion Include="Aspire.Hosting.AppHost" Version="$(AspireVersion)" />
-		<PackageVersion Include="Aspire.Hosting.Testing" Version="$(AspireVersion)" />
-		<PackageVersion Include="Aspire.Hosting.MySql" Version="$(AspireVersion)" />
-		<PackageVersion Include="Aspire.Hosting.PostgreSQL" Version="$(AspireVersion)" />
-		<PackageVersion Include="Aspire.Hosting.RabbitMQ" Version="$(AspireVersion)" />
-		<PackageVersion Include="Aspire.Hosting.Redis" Version="$(AspireVersion)" />
-		<PackageVersion Include="Aspire.Hosting.Swagger" Version="$(AspireVersion)" />
-		<PackageVersion Include="Aspire.Hosting.SwaggerUI" Version="$(AspireVersion)" />
-		<PackageVersion Include="Aspire.Hosting.Seq" Version="$(AspireVersion)" />
-		<PackageVersion Include="Aspire.Dashboard" Version="$(AspireVersion)" />
-		<PackageVersion Include="Aspire.Seq" Version="$(AspireVersion)" />
-		<PackageVersion Include="Aspire.StackExchange.Redis" Version="$(AspireVersion)" />
-		<PackageVersion Include="Aspire.PostgreSQL" Version="$(AspireVersion)" />
-		<PackageVersion Include="Aspire.Npgsql" Version="$(AspireVersion)" />
-		<PackageVersion Include="Aspire.Npgsql.EntityFrameworkCore.PostgreSQL" Version="$(AspireVersion)" />
-		<PackageVersion Include="Aspire.Pomelo.EntityFrameworkCore.MySql" Version="$(AspireVersion)" />
-		<PackageVersion Include="Aspire.RabbitMQ" Version="$(AspireVersion)" />
-		<PackageVersion Include="Aspire.RabbitMQ.Client" Version="$(AspireVersion)" />
-		<!--extensions-->
-		<PackageVersion Include="Microsoft.Extensions.Identity.Core" Version="$(FrameworkVersion)" />
-		<PackageVersion Include="Microsoft.Extensions.Identity.Stores" Version="$(FrameworkVersion)" />
-		<PackageVersion Include="Microsoft.Extensions.Hosting" Version="8.0.0" />
-		<PackageVersion Include="Microsoft.Extensions.Hosting.Abstractions" Version="8.0.0" />
-		<PackageVersion Include="Microsoft.Extensions.Http.Resilience" Version="8.7.0" />
-		<PackageVersion Include="Microsoft.Extensions.Logging.Debug" Version="8.0.0" />
-		<PackageVersion Include="Microsoft.Extensions.ServiceDiscovery" Version="8.1.0" />
-		<PackageVersion Include="Microsoft.Extensions.ServiceDiscovery.Yarp" Version="8.1.0" />
-		<!--entityframework-->
-		<PackageVersion Include="Microsoft.Data.SqlClient" Version="5.2.1" />
-		<PackageVersion Include="Microsoft.EntityFrameworkCore" Version="$(EntityFrameworkVersion)" />
-		<PackageVersion Include="Microsoft.EntityFrameworkCore.Relational" Version="$(EntityFrameworkVersion)" />
-		<PackageVersion Include="Microsoft.EntityFrameworkCore.Sqlite" Version="$(EntityFrameworkVersion)" />
-		<PackageVersion Include="Microsoft.EntityFrameworkCore.Tools" Version="$(EntityFrameworkVersion)" PrivateAssets="all" />
-		<PackageVersion Include="Microsoft.EntityFrameworkCore.Design" Version="$(EntityFrameworkVersion)" PrivateAssets="all" />
-		<PackageVersion Include="Microsoft.TestPlatform.TestHost" Version="17.10.0" />
-		<PackageVersion Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="8.0.4" />
-		<PackageVersion Include="Pomelo.EntityFrameworkCore.MySql" Version="8.0.2" />
-		<!--maui-->
-		<PackageVersion Include="Microsoft.Maui.Controls" Version="$(MauiVersion)" />
-		<PackageVersion Include="Microsoft.Maui.Controls.Compatibility" Version="$(MauiVersion)" />
-		<PackageVersion Include="Microsoft.AspNetCore.Components.WebView.Maui" Version="$(MauiVersion)" />
-		<!--messaging-->
-		<PackageVersion Include="MediatR" Version="12.4.0" />
-		<PackageVersion Include="MediatR.Extensions.Microsoft.DependencyInjection" Version="12.2.0" />
-		<PackageVersion Include="MassTransit" Version="7.2.0" />
-		<PackageVersion Include="Grpc.Tools" Version="2.65.0" PrivateAssets="all" />
-		<PackageVersion Include="Grpc.HealthCheck" Version="2.64.0" />
-		<PackageVersion Include="Grpc.Net.ClientFactory" Version="2.64.0" />
-		<!--telemetry-->
-		<PackageVersion Include="Microsoft.ApplicationInsights.AspNetCore" Version="2.22.0" />
-		<PackageVersion Include="OpenTelemetry.Exporter.OpenTelemetryProtocol" Version="1.9.0" />
-		<PackageVersion Include="OpenTelemetry.Extensions.Hosting" Version="1.9.0" />
-		<PackageVersion Include="OpenTelemetry.Instrumentation.AspNetCore" Version="1.9.0" />
-		<PackageVersion Include="OpenTelemetry.Instrumentation.Http" Version="1.9.0" />
-		<PackageVersion Include="OpenTelemetry.Instrumentation.Runtime" Version="1.9.0" />
-		<PackageVersion Include="OpenTelemetry.Api" Version="1.9.0" />
-		<PackageVersion Include="Serilog" Version="4.0.0" />
-		<PackageVersion Include="Serilog.Sinks.Console" Version="6.0.0" />
-		<PackageVersion Include="Serilog.Sinks.Seq" Version="8.0.0" />
-		<!--seq-->
-		<PackageVersion Include="Seq.Extensions.Logging" Version="8.0.0" />
-		<!--health-->
-		<PackageVersion Include="AspNetCore.HealthChecks.Uris" Version="8.0.1" />
-		<!--swashbuckle-->
-		<PackageVersion Include="Swashbuckle.AspNetCore" Version="6.6.2" />
-		<PackageVersion Include="Swashbuckle.AspNetCore.SwaggerGen" Version="6.6.2" />
-		<!--tests -->
-		<PackageVersion Include="Microsoft.AspNetCore.TestHost" Version="$(FrameworkVersion)" />
-		<PackageVersion Include="Microsoft.NET.Test.Sdk" Version="17.10.0" />
-		<PackageVersion Include="Moq" Version="4.20.70" />
-		<PackageVersion Include="xunit" Version="2.9.0" />
-		<PackageVersion Include="xunit.runner.visualstudio" Version="2.8.2" PrivateAssets="all" />
-		<PackageVersion Include="coverlet.collector" Version="6.0.2" PrivateAssets="all" />
-		<PackageVersion Include="coverlet.msbuild" Version="6.0.2" PrivateAssets="all" />
-		<PackageVersion Include="FluentAssertions" Version="6.12.0" />
-		<PackageVersion Include="FluentAssertions.AspNetCore.Mvc" Version="4.2.0" />
-		<PackageVersion Include="FluentValidation" Version="11.9.2" />
-		<PackageVersion Include="FluentValidation.AspNetCore" Version="11.3.0" />
-		<!--misculaneous-->
-		<PackageVersion Include="Bogus" Version="35.6.0" />
-		<PackageVersion Include="Yarp.ReverseProxy" Version="2.1.0" />
-		<!--benchmarks-->
-		<PackageVersion Include="BenchmarkDotNet" Version="0.13.12" />
-		<!--wangkanai-->
-		<PackageVersion Include="Wangkanai.System" Version="5.0.0" />
-		<PackageVersion Include="Wangkanai.Validation" Version="4.1.0" />
-		<PackageVersion Include="Wangkanai.Domain" Version="4.4.0" />
-		<PackageVersion Include="Wangkanai.EntityFramework" Version="3.2.0" />
-		<PackageVersion Include="Wangkanai.Mvc" Version="3.0.0" />
-		<PackageVersion Include="Wangkanai.Microservice" Version="0.1.0" />
-	</ItemGroup>
+  <PropertyGroup>
+    <ManagePackageVersionsCentrally>true</ManagePackageVersionsCentrally>
+    <FrameworkVersion>8.0.7</FrameworkVersion>
+    <EntityFrameworkVersion>8.0.7</EntityFrameworkVersion>
+    <AspireVersion>8.1.0</AspireVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <!--sourcelink-->
+    <PackageVersion Include="AspNetCore.HealthChecks.NpgSql" Version="8.0.1" />
+    <PackageVersion Include="Microsoft.SourceLink.AzureRepos.Git" Version="8.0.0" />
+    <PackageVersion Include="Microsoft.SourceLink.GitHub" Version="8.0.0" />
+    <!--framework-->
+    <PackageVersion Include="Microsoft.AspNetCore.OpenApi" Version="$(FrameworkVersion)" />
+    <PackageVersion Include="Microsoft.AspNetCore.Components.WebAssembly" Version="$(FrameworkVersion)" />
+    <PackageVersion Include="Microsoft.AspNetCore.Components.WebAssembly.Server" Version="$(FrameworkVersion)" />
+    <PackageVersion Include="Microsoft.AspNetCore.Components.WebAssembly.DevServer" Version="$(FrameworkVersion)" />
+    <PackageVersion Include="Microsoft.AspNetCore.Components.WebAssembly.Authentication" Version="$(FrameworkVersion)" />
+    <PackageVersion Include="Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore" Version="$(FrameworkVersion)" />
+    <PackageVersion Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="$(FrameworkVersion)" />
+    <!--aspire-->
+    <PackageVersion Include="Aspire.Hosting.AppHost" Version="$(AspireVersion)" />
+    <PackageVersion Include="Aspire.Hosting.Testing" Version="$(AspireVersion)" />
+    <PackageVersion Include="Aspire.Hosting.MySql" Version="$(AspireVersion)" />
+    <PackageVersion Include="Aspire.Hosting.PostgreSQL" Version="$(AspireVersion)" />
+    <PackageVersion Include="Aspire.Hosting.RabbitMQ" Version="$(AspireVersion)" />
+    <PackageVersion Include="Aspire.Hosting.Redis" Version="$(AspireVersion)" />
+    <PackageVersion Include="Aspire.Hosting.Swagger" Version="$(AspireVersion)" />
+    <PackageVersion Include="Aspire.Hosting.SwaggerUI" Version="$(AspireVersion)" />
+    <PackageVersion Include="Aspire.Hosting.Seq" Version="$(AspireVersion)" />
+    <PackageVersion Include="Aspire.Dashboard" Version="$(AspireVersion)" />
+    <PackageVersion Include="Aspire.Seq" Version="$(AspireVersion)" />
+    <PackageVersion Include="Aspire.StackExchange.Redis" Version="$(AspireVersion)" />
+    <PackageVersion Include="Aspire.PostgreSQL" Version="$(AspireVersion)" />
+    <PackageVersion Include="Aspire.Npgsql" Version="$(AspireVersion)" />
+    <PackageVersion Include="Aspire.Npgsql.EntityFrameworkCore.PostgreSQL" Version="$(AspireVersion)" />
+    <PackageVersion Include="Aspire.Pomelo.EntityFrameworkCore.MySql" Version="$(AspireVersion)" />
+    <PackageVersion Include="Aspire.RabbitMQ" Version="$(AspireVersion)" />
+    <PackageVersion Include="Aspire.RabbitMQ.Client" Version="$(AspireVersion)" />
+    <!--extensions-->
+    <PackageVersion Include="Microsoft.Extensions.Identity.Core" Version="$(FrameworkVersion)" />
+    <PackageVersion Include="Microsoft.Extensions.Identity.Stores" Version="$(FrameworkVersion)" />
+    <PackageVersion Include="Microsoft.Extensions.Hosting" Version="8.0.0" />
+    <PackageVersion Include="Microsoft.Extensions.Hosting.Abstractions" Version="8.0.0" />
+    <PackageVersion Include="Microsoft.Extensions.Http.Resilience" Version="8.7.0" />
+    <PackageVersion Include="Microsoft.Extensions.Logging.Debug" Version="8.0.0" />
+    <PackageVersion Include="Microsoft.Extensions.ServiceDiscovery" Version="8.1.0" />
+    <PackageVersion Include="Microsoft.Extensions.ServiceDiscovery.Yarp" Version="8.1.0" />
+    <!--entityframework-->
+    <PackageVersion Include="Microsoft.Data.SqlClient" Version="5.2.1" />
+    <PackageVersion Include="Microsoft.EntityFrameworkCore" Version="$(EntityFrameworkVersion)" />
+    <PackageVersion Include="Microsoft.EntityFrameworkCore.Relational" Version="$(EntityFrameworkVersion)" />
+    <PackageVersion Include="Microsoft.EntityFrameworkCore.Sqlite" Version="$(EntityFrameworkVersion)" />
+    <PackageVersion Include="Microsoft.EntityFrameworkCore.Tools" Version="$(EntityFrameworkVersion)" PrivateAssets="all" />
+    <PackageVersion Include="Microsoft.EntityFrameworkCore.Design" Version="$(EntityFrameworkVersion)" PrivateAssets="all" />
+    <PackageVersion Include="Microsoft.TestPlatform.TestHost" Version="17.10.0" />
+    <PackageVersion Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="8.0.4" />
+    <PackageVersion Include="Pomelo.EntityFrameworkCore.MySql" Version="8.0.2" />
+    <!--maui-->
+    <PackageVersion Include="Microsoft.Maui.Controls" Version="$(MauiVersion)" />
+    <PackageVersion Include="Microsoft.Maui.Controls.Compatibility" Version="$(MauiVersion)" />
+    <PackageVersion Include="Microsoft.AspNetCore.Components.WebView.Maui" Version="$(MauiVersion)" />
+    <!--messaging-->
+    <PackageVersion Include="MediatR" Version="12.4.0" />
+    <PackageVersion Include="MediatR.Extensions.Microsoft.DependencyInjection" Version="12.2.0" />
+    <PackageVersion Include="MassTransit" Version="7.2.0" />
+    <PackageVersion Include="Grpc.Tools" Version="2.65.0" PrivateAssets="all" />
+    <PackageVersion Include="Grpc.HealthCheck" Version="2.64.0" />
+    <PackageVersion Include="Grpc.Net.ClientFactory" Version="2.64.0" />
+    <!--telemetry-->
+    <PackageVersion Include="Microsoft.ApplicationInsights.AspNetCore" Version="2.22.0" />
+    <PackageVersion Include="OpenTelemetry.Exporter.OpenTelemetryProtocol" Version="1.9.0" />
+    <PackageVersion Include="OpenTelemetry.Extensions.Hosting" Version="1.9.0" />
+    <PackageVersion Include="OpenTelemetry.Instrumentation.AspNetCore" Version="1.9.0" />
+    <PackageVersion Include="OpenTelemetry.Instrumentation.Http" Version="1.9.0" />
+    <PackageVersion Include="OpenTelemetry.Instrumentation.Runtime" Version="1.9.0" />
+    <PackageVersion Include="OpenTelemetry.Api" Version="1.9.0" />
+    <PackageVersion Include="Serilog" Version="4.0.0" />
+    <PackageVersion Include="Serilog.Sinks.Console" Version="6.0.0" />
+    <PackageVersion Include="Serilog.Sinks.Seq" Version="8.0.0" />
+    <!--seq-->
+    <PackageVersion Include="Seq.Extensions.Logging" Version="8.0.0" />
+    <!--health-->
+    <PackageVersion Include="AspNetCore.HealthChecks.Uris" Version="8.0.1" />
+    <!--swashbuckle-->
+    <PackageVersion Include="Swashbuckle.AspNetCore" Version="6.6.2" />
+    <PackageVersion Include="Swashbuckle.AspNetCore.SwaggerGen" Version="6.6.2" />
+    <!--tests -->
+    <PackageVersion Include="Microsoft.AspNetCore.TestHost" Version="$(FrameworkVersion)" />
+    <PackageVersion Include="Microsoft.NET.Test.Sdk" Version="17.10.0" />
+    <PackageVersion Include="Moq" Version="4.20.70" />
+    <PackageVersion Include="xunit" Version="2.9.0" />
+    <PackageVersion Include="xunit.runner.visualstudio" Version="2.8.2" PrivateAssets="all" />
+    <PackageVersion Include="coverlet.collector" Version="6.0.2" PrivateAssets="all" />
+    <PackageVersion Include="coverlet.msbuild" Version="6.0.2" PrivateAssets="all" />
+    <PackageVersion Include="FluentAssertions" Version="6.12.0" />
+    <PackageVersion Include="FluentAssertions.AspNetCore.Mvc" Version="4.2.0" />
+    <PackageVersion Include="FluentValidation" Version="11.9.2" />
+    <PackageVersion Include="FluentValidation.AspNetCore" Version="11.3.0" />
+    <!--misculaneous-->
+    <PackageVersion Include="Bogus" Version="35.6.0" />
+    <PackageVersion Include="Yarp.ReverseProxy" Version="2.1.0" />
+    <!--benchmarks-->
+    <PackageVersion Include="BenchmarkDotNet" Version="0.13.12" />
+    <!--wangkanai-->
+    <PackageVersion Include="Wangkanai.System" Version="5.0.0" />
+    <PackageVersion Include="Wangkanai.Validation" Version="4.1.0" />
+    <PackageVersion Include="Wangkanai.Domain" Version="4.4.0" />
+    <PackageVersion Include="Wangkanai.EntityFramework" Version="3.2.0" />
+    <PackageVersion Include="Wangkanai.Mvc" Version="3.0.0" />
+    <PackageVersion Include="Wangkanai.Microservice" Version="0.1.0" />
+  </ItemGroup>
 </Project>
