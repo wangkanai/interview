@@ -6,8 +6,9 @@ using Microsoft.AspNetCore.Components.Server;
 using Microsoft.AspNetCore.Components.Web;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.Extensions.Options;
+
 using Wangkanai.Interview.Portal.Client;
-using Wangkanai.Interview.Portal.Data;
+using Wangkanai.Interview.Portal.Identity;
 
 namespace Wangkanai.Interview.Portal.Components.Account;
 

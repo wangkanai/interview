@@ -29,6 +29,11 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Architecture", "Architecture", "{D7848B64-4117-4FA0-95B0-BDB6DD66A872}"
 	ProjectSection(SolutionItems) = preProject
 		Architecture\readme.md = Architecture\readme.md
+		Architecture\db.ps1 = Architecture\db.ps1
+		Architecture\.gitignore = Architecture\.gitignore
+		Architecture\Directory.Build.targets = Architecture\Directory.Build.targets
+		Architecture\Directory.Build.props = Architecture\Directory.Build.props
+		Architecture\Directory.Packages.props = Architecture\Directory.Packages.props
 	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wangkanai.Interview.Portal.Client", "Architecture\src\Client\Wangkanai.Interview.Portal.Client.csproj", "{90C587A7-8C04-4C48-BD3F-B52990708D1A}"
@@ -40,6 +45,14 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wangkanai.Interview.Portal.Application", "Architecture\src\Application\Wangkanai.Interview.Portal.Application.csproj", "{C7ECC100-7B04-4283-8CF5-91A941A3CAB9}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wangkanai.Interview.Portal.Infrastructure", "Architecture\src\Infrastructure\Wangkanai.Interview.Portal.Infrastructure.csproj", "{563C969D-DA24-4E03-91BE-F0C8A56DD729}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Aspire", "Aspire", "{DA41C594-136F-491C-AE63-6EF8043A3EBD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wangkanai.Interview.ServiceDefaults", "Architecture\aspire\ServiceDefaults\Wangkanai.Interview.ServiceDefaults.csproj", "{DDE92CE1-2C84-4883-BCC1-BCAD331685F8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wangkanai.Interview.AppHost", "Architecture\aspire\AppHost\Wangkanai.Interview.AppHost.csproj", "{0CF77954-B9DC-4202-9E9D-1E06387DACA8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wangkanai.Interview.Portal.Migration", "Architecture\src\Migration\Wangkanai.Interview.Portal.Migration.csproj", "{9A848E1E-14A1-476A-97D1-8E2AF14166F4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -55,6 +68,10 @@ Global
 		{E018C8F8-2063-4BC4-981A-26AFF88D2617} = {D7848B64-4117-4FA0-95B0-BDB6DD66A872}
 		{C7ECC100-7B04-4283-8CF5-91A941A3CAB9} = {D7848B64-4117-4FA0-95B0-BDB6DD66A872}
 		{563C969D-DA24-4E03-91BE-F0C8A56DD729} = {D7848B64-4117-4FA0-95B0-BDB6DD66A872}
+		{DA41C594-136F-491C-AE63-6EF8043A3EBD} = {D7848B64-4117-4FA0-95B0-BDB6DD66A872}
+		{DDE92CE1-2C84-4883-BCC1-BCAD331685F8} = {DA41C594-136F-491C-AE63-6EF8043A3EBD}
+		{0CF77954-B9DC-4202-9E9D-1E06387DACA8} = {DA41C594-136F-491C-AE63-6EF8043A3EBD}
+		{9A848E1E-14A1-476A-97D1-8E2AF14166F4} = {D7848B64-4117-4FA0-95B0-BDB6DD66A872}
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{90C587A7-8C04-4C48-BD3F-B52990708D1A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
@@ -77,5 +94,17 @@ Global
 		{563C969D-DA24-4E03-91BE-F0C8A56DD729}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{563C969D-DA24-4E03-91BE-F0C8A56DD729}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{563C969D-DA24-4E03-91BE-F0C8A56DD729}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DDE92CE1-2C84-4883-BCC1-BCAD331685F8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DDE92CE1-2C84-4883-BCC1-BCAD331685F8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DDE92CE1-2C84-4883-BCC1-BCAD331685F8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DDE92CE1-2C84-4883-BCC1-BCAD331685F8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0CF77954-B9DC-4202-9E9D-1E06387DACA8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0CF77954-B9DC-4202-9E9D-1E06387DACA8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0CF77954-B9DC-4202-9E9D-1E06387DACA8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0CF77954-B9DC-4202-9E9D-1E06387DACA8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9A848E1E-14A1-476A-97D1-8E2AF14166F4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9A848E1E-14A1-476A-97D1-8E2AF14166F4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9A848E1E-14A1-476A-97D1-8E2AF14166F4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9A848E1E-14A1-476A-97D1-8E2AF14166F4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

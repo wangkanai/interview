@@ -3,7 +3,7 @@
 @using System.ComponentModel.DataAnnotations
 @using Microsoft.AspNetCore.Authentication
 @using Microsoft.AspNetCore.Identity
-@using Wangkanai.Interview.Portal.Data
+@using Wangkanai.Interview.Portal.Identity
 
 @inject SignInManager<ApplicationUser> SignInManager
 @inject ILogger<Login> Logger
@@ -14,7 +14,7 @@
 
 <h1>Log in</h1>
 <div class="row">
-    <div class="col-md-4">
+    <div class="col-md-6">
         <section>
             <StatusMessage Message="@errorMessage" />
             <EditForm Model="Input" method="post" OnValidSubmit="LoginUser" FormName="login">
@@ -53,13 +53,6 @@
                     </p>
                 </div>
             </EditForm>
-        </section>
-    </div>
-    <div class="col-md-6 col-md-offset-2">
-        <section>
-            <h3>Use another service to log in.</h3>
-            <hr />
-            <ExternalLoginPicker />
         </section>
     </div>
 </div>

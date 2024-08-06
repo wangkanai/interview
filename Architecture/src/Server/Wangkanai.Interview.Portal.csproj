@@ -1,24 +1,32 @@
 <Project Sdk="Microsoft.NET.Sdk.Web">
 
-  <PropertyGroup>
-    <TargetFramework>net8.0</TargetFramework>
-    <Nullable>enable</Nullable>
-    <ImplicitUsings>enable</ImplicitUsings>
-    <UserSecretsId>aspnet-Wangkanai.Interview.Portal-70ed0f86-46a2-4b09-bf1b-fe2a530df2d2</UserSecretsId>
-  </PropertyGroup>
+	<PropertyGroup>
+		<TargetFramework>net8.0</TargetFramework>
+		<Nullable>enable</Nullable>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<UserSecretsId>aspnet-Wangkanai.Interview.Portal-70ed0f86-46a2-4b09-bf1b-fe2a530df2d2</UserSecretsId>
+	</PropertyGroup>
 
-  <ItemGroup>
-    <None Update="Data\app.db" CopyToOutputDirectory="PreserveNewest" ExcludeFromSingleFile="true" />
-  </ItemGroup>
+	<ItemGroup>
+		<PackageReference Include="Microsoft.Extensions.ServiceDiscovery.Yarp"/>
+		<PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly.Server"/>
+		<PackageReference Include="Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore"/>
+		<PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore"/>
+		<PackageReference Include="Microsoft.EntityFrameworkCore.Tools"/>
+		<PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL"/>
+		<PackageReference Include="Aspire.Npgsql.EntityFrameworkCore.PostgreSQL"/>
+		<PackageReference Include="Aspire.Npgsql"/>
+		<PackageReference Include="Aspire.Seq"/>
+		<PackageReference Include="Serilog" />
+		<PackageReference Include="Serilog.Sinks.Console" />
+		<PackageReference Include="Serilog.Sinks.Seq" />
+		<PackageReference Include="Yarp.ReverseProxy"/>
+	</ItemGroup>
 
-  <ItemGroup>
-    <ProjectReference Include="..\Client\Wangkanai.Interview.Portal.Client.csproj" />
-    <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly.Server" Version="8.0.7" />
-    <PackageReference Include="Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore" Version="8.0.7" />
-    <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="8.0.7" />
-    <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="8.0.7" />
-    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="8.0.7" />
-    <ProjectReference Include="..\Infrastructure\Wangkanai.Interview.Portal.Infrastructure.csproj" />
-  </ItemGroup>
+	<ItemGroup>
+		<ProjectReference Include="..\..\aspire\ServiceDefaults\Wangkanai.Interview.ServiceDefaults.csproj"/>
+		<ProjectReference Include="..\Client\Wangkanai.Interview.Portal.Client.csproj"/>
+		<ProjectReference Include="..\Infrastructure\Wangkanai.Interview.Portal.Infrastructure.csproj"/>
+	</ItemGroup>
 
 </Project>
