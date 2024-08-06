@@ -8,6 +8,8 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="8.0.4" />
+    <ProjectReference Include="..\..\aspire\ServiceDefaults\Wangkanai.Interview.ServiceDefaults.csproj" />
     <ProjectReference Include="..\Client\Wangkanai.Interview.Portal.Client.csproj" />
     <ProjectReference Include="..\Infrastructure\Wangkanai.Interview.Portal.Infrastructure.csproj" />
     <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly.Server" Version="8.0.7" />
