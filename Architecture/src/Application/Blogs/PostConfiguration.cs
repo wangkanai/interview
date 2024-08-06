@@ -11,25 +11,28 @@ public class PostConfiguration : IEntityTypeConfiguration<Post>
 {
    public void Configure(EntityTypeBuilder<Post> builder)
    {
-      builder.Property(p => p.Title)
+      builder.HasIndex(post => post.Title)
+             .IsUnique();
+      
+      builder.Property(post => post.Title)
              .HasMaxLength(100)
              .IsRequired();
 
-      builder.Property(p => p.Content)
+      builder.Property(post => post.Content)
              .HasMaxLength(500)
              .IsRequired();
 
-      builder.Property(p => p.CreatedBy)
+      builder.Property(post => post.CreatedBy)
              .HasMaxLength(100)
              .IsRequired();
 
-      builder.Property(p => p.UpdatedBy)
+      builder.Property(post => post.UpdatedBy)
              .HasMaxLength(100);
 
-      builder.Property(p => p.Created)
+      builder.Property(post => post.Created)
              .NpgValueGeneratedOnAdd();
 
-      builder.Property(p => p.Updated)
+      builder.Property(post => post.Updated)
              .NpgValueGeneratedOnAddOrUpdate();
    }
 }

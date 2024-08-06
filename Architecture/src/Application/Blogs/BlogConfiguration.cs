@@ -11,21 +11,24 @@ public class BlogConfiguration : IEntityTypeConfiguration<Blog>
 {
    public void Configure(EntityTypeBuilder<Blog> builder)
    {
-      builder.Property(b => b.Title)
+      builder.HasIndex(blog => blog.Title)
+             .IsUnique();
+      
+      builder.Property(blog => blog.Title)
              .HasMaxLength(100)
              .IsRequired();
 
-      builder.Property(b => b.CreatedBy)
+      builder.Property(blog => blog.CreatedBy)
              .HasMaxLength(100)
              .IsRequired();
 
-      builder.Property(b => b.UpdatedBy)
+      builder.Property(blog => blog.UpdatedBy)
              .HasMaxLength(100);
 
-      builder.Property(b => b.Created)
+      builder.Property(blog => blog.Created)
              .NpgValueGeneratedOnAdd();
 
-      builder.Property(b => b.Updated)
+      builder.Property(blog => blog.Updated)
              .NpgValueGeneratedOnAddOrUpdate();
    }
 }
