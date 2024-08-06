@@ -2,11 +2,11 @@ using Microsoft.AspNetCore.Components.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 
-using Wangkanai.Interview.Domain.Identity;
+using Wangkanai.Interview.Portal;
 using Wangkanai.Interview.Portal.Client.Pages;
 using Wangkanai.Interview.Portal.Components;
 using Wangkanai.Interview.Portal.Components.Account;
-using Wangkanai.Interview.Portal.Data;
+using Wangkanai.Interview.Portal.Identity;
 
 var builder = WebApplication.CreateBuilder(args);
 

@@ -7,25 +7,29 @@ using Wangkanai.Interview.Portal.Extensions;
 
 namespace Wangkanai.Interview.Portal.Blogs;
 
-public class BlogConfiguration : IEntityTypeConfiguration<Blog>
+public class PostConfiguration : IEntityTypeConfiguration<Post>
 {
-   public void Configure(EntityTypeBuilder<Blog> builder)
+   public void Configure(EntityTypeBuilder<Post> builder)
    {
-      builder.Property(b => b.Title)
+      builder.Property(p => p.Title)
              .HasMaxLength(100)
              .IsRequired();
 
-      builder.Property(b => b.CreatedBy)
+      builder.Property(p => p.Content)
+             .HasMaxLength(500)
+             .IsRequired();
+
+      builder.Property(p => p.CreatedBy)
              .HasMaxLength(100)
              .IsRequired();
 
-      builder.Property(b => b.UpdatedBy)
+      builder.Property(p => p.UpdatedBy)
              .HasMaxLength(100);
 
-      builder.Property(b => b.Created)
+      builder.Property(p => p.Created)
              .NpgValueGeneratedOnAdd();
 
-      builder.Property(b => b.Updated)
+      builder.Property(p => p.Updated)
              .NpgValueGeneratedOnAddOrUpdate();
    }
 }
