@@ -45,7 +45,8 @@ We will be using interactive render mode, so both hosting mode are required to b
 For authentication and authorization we will be using [ASP.NET Core Identity](https://learn.microsoft.com/en-us/aspnet/core/security/authentication/identity?view=aspnetcore-8.0)
 
 The microservices will be develop in [ASP.NET Core Web Api](https://learn.microsoft.com/en-us/aspnet/core/tutorials/first-web-api?view=aspnetcore-8.0&tabs=visual-studio) with feature base folder. 
-The persistence database will be [PostgreSql](https://www.postgresql.org/)
+The persistence database will be [PostgreSql](https://www.postgresql.org/), 
+in which the configuration provider is fully utilize PostgreSQL features.
 
 You will also need to have unit tests, integration tests, and functional tests. 
 We will being using the [XUnit](https://xunit.net/) testing framework.
