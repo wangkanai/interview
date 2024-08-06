@@ -16,6 +16,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\..\src\Migration\Wangkanai.Interview.Portal.Migration.csproj" />
     <ProjectReference Include="..\..\src\Server\Wangkanai.Interview.Portal.csproj" />
   </ItemGroup>
 

@@ -52,6 +52,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wangkanai.Interview.Service
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wangkanai.Interview.AppHost", "Architecture\aspire\AppHost\Wangkanai.Interview.AppHost.csproj", "{0CF77954-B9DC-4202-9E9D-1E06387DACA8}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wangkanai.Interview.Portal.Migration", "Architecture\src\Migration\Wangkanai.Interview.Portal.Migration.csproj", "{9A848E1E-14A1-476A-97D1-8E2AF14166F4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -69,6 +71,7 @@ Global
 		{DA41C594-136F-491C-AE63-6EF8043A3EBD} = {D7848B64-4117-4FA0-95B0-BDB6DD66A872}
 		{DDE92CE1-2C84-4883-BCC1-BCAD331685F8} = {DA41C594-136F-491C-AE63-6EF8043A3EBD}
 		{0CF77954-B9DC-4202-9E9D-1E06387DACA8} = {DA41C594-136F-491C-AE63-6EF8043A3EBD}
+		{9A848E1E-14A1-476A-97D1-8E2AF14166F4} = {D7848B64-4117-4FA0-95B0-BDB6DD66A872}
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{90C587A7-8C04-4C48-BD3F-B52990708D1A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
@@ -99,5 +102,9 @@ Global
 		{0CF77954-B9DC-4202-9E9D-1E06387DACA8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0CF77954-B9DC-4202-9E9D-1E06387DACA8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0CF77954-B9DC-4202-9E9D-1E06387DACA8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9A848E1E-14A1-476A-97D1-8E2AF14166F4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9A848E1E-14A1-476A-97D1-8E2AF14166F4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9A848E1E-14A1-476A-97D1-8E2AF14166F4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9A848E1E-14A1-476A-97D1-8E2AF14166F4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

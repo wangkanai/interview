@@ -1,22 +1,24 @@
 <Project Sdk="Microsoft.NET.Sdk.Web">
 
-  <PropertyGroup>
-    <TargetFramework>net8.0</TargetFramework>
-    <Nullable>enable</Nullable>
-    <ImplicitUsings>enable</ImplicitUsings>
-    <UserSecretsId>aspnet-Wangkanai.Interview.Portal-70ed0f86-46a2-4b09-bf1b-fe2a530df2d2</UserSecretsId>
-  </PropertyGroup>
+	<PropertyGroup>
+		<TargetFramework>net8.0</TargetFramework>
+		<Nullable>enable</Nullable>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<UserSecretsId>aspnet-Wangkanai.Interview.Portal-70ed0f86-46a2-4b09-bf1b-fe2a530df2d2</UserSecretsId>
+	</PropertyGroup>
 
-  <ItemGroup>
-    <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="8.0.4" />
-    <ProjectReference Include="..\..\aspire\ServiceDefaults\Wangkanai.Interview.ServiceDefaults.csproj" />
-    <ProjectReference Include="..\Client\Wangkanai.Interview.Portal.Client.csproj" />
-    <ProjectReference Include="..\Infrastructure\Wangkanai.Interview.Portal.Infrastructure.csproj" />
-    <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly.Server" Version="8.0.7" />
-    <PackageReference Include="Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore" Version="8.0.7" />
-    <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="8.0.7" />
-    <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="8.0.7" />
-    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="8.0.7" />
-  </ItemGroup>
+	<ItemGroup>
+		<PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly.Server"/>
+		<PackageReference Include="Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore"/>
+		<PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore"/>
+		<PackageReference Include="Microsoft.EntityFrameworkCore.Tools"/>
+		<PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL"/>
+	</ItemGroup>
+
+	<ItemGroup>
+		<ProjectReference Include="..\..\aspire\ServiceDefaults\Wangkanai.Interview.ServiceDefaults.csproj"/>
+		<ProjectReference Include="..\Client\Wangkanai.Interview.Portal.Client.csproj"/>
+		<ProjectReference Include="..\Infrastructure\Wangkanai.Interview.Portal.Infrastructure.csproj"/>
+	</ItemGroup>
 
 </Project>
