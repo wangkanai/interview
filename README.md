@@ -16,4 +16,4 @@ The development must be [.NET 8.0](https://learn.microsoft.com/en-us/dotnet/core
 
 ## Solution setup
 
-I would like to see you create the 
+I have create the base working solution for you already with basic folder structure.
