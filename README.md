@@ -1,12 +1,20 @@
 # Code interview
 
-Welcome to [wangkanai](https://github.com/wangkanai) code interview, the interview will be 1 hour with time extension approval (points deductable). Please read the instruction clearly and design your solution accordingly. Your will evaluate base on your coding priciples and solution folder structuring. I will watching our screen share throughout the entire code interview. If you counter an mind blocking issue, you may search the internet for help (this is part of problem solving).
+Welcome to [wangkanai](https://github.com/wangkanai) code interview, the interview will be 1 hour with time extension approval (points deductible). 
+Please read the instruction clearly and design your solution accordingly. 
+Your will evaluate base on your coding principles and solution folder structuring. 
+I will watching your screen share throughout the entire code interview. 
+If you counter a mind blocking issue, you may search the internet for help (this is part of problem solving).
 
-You will have to fork this [code interview](https://github.com/wangkanai/interview/fork) repo and clone it to your local development machine. Prepre your development environment and create your pull request to the original repo. You may commit as much you like, I have setup CI for you to evaluate you code with sonarqube. I have also included `.editorconfig` for code format consistency, so you can focus on the logic of your development.
+You will have to fork this [code interview](https://github.com/wangkanai/interview/fork) repo and clone it to your local development machine. 
+Prepare your development environment and create your pull request to the original repo. 
+You may commit as much as you like, I have setup CI for you to evaluate you code with sonarqube. 
+I have also included `.editorconfig` for code format consistency, so you can focus on the logic of your development.
 
 The [vertical slice architecture](Vertical Slice Architecture) with features as the folder structure.
 
-Don't be afraid in why the interview is so complicated. This will be your actual development environment when you have successfull join our team.
+Don't be afraid in why the interview is so complicated.
+This will be your actual development environment when you have successfully joined our team.
 
 I wish the best of luck :)
 
@@ -30,9 +38,9 @@ You will also need to have unit tests, integration tests, and functional tests. 
 
 I have create the base working solution for you already with basic folder structure.
 
-1. Aspire
-2. Microservices
-3. Portal
+1. [Aspire](Aspire)
+2. [Microservices](Microservices)
+3. [Portal](Portal)
 
 Our vertical slice architecture will be setup in the following project structure;
 
