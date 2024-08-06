@@ -5,6 +5,7 @@ Please read the instruction clearly and design your solution accordingly.
 Your will evaluate base on your coding principles and solution folder structuring. 
 I will watching your screen share throughout the entire code interview. 
 If you counter a mind blocking issue, you may search the internet for help (this is part of problem solving).
+Yes, you may use any AI assistant (ChatGPT, Copilot, & etc) to help you during the code interview.
 During the code interview, you will be ask to explain your code and design decision.
 If you have any question, please ask me at anytime during the session.
 
