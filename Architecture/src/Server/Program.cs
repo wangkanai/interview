@@ -1,6 +1,8 @@
 using Microsoft.AspNetCore.Components.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
+
+using Wangkanai.Interview.Domain.Identity;
 using Wangkanai.Interview.Portal.Client.Pages;
 using Wangkanai.Interview.Portal.Components;
 using Wangkanai.Interview.Portal.Components.Account;

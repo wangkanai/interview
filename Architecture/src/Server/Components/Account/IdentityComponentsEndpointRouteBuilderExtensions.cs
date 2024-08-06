@@ -6,6 +6,8 @@ using Microsoft.AspNetCore.Http.Extensions;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Primitives;
+
+using Wangkanai.Interview.Domain.Identity;
 using Wangkanai.Interview.Portal.Components.Account.Pages;
 using Wangkanai.Interview.Portal.Components.Account.Pages.Manage;
 using Wangkanai.Interview.Portal.Data;

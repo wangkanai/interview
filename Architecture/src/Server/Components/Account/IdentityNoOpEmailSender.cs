@@ -1,5 +1,7 @@
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.UI.Services;
+
+using Wangkanai.Interview.Domain.Identity;
 using Wangkanai.Interview.Portal.Data;
 
 namespace Wangkanai.Interview.Portal.Components.Account;
