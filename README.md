@@ -5,6 +5,8 @@ Please read the instruction clearly and design your solution accordingly.
 Your will evaluate base on your coding principles and solution folder structuring. 
 I will watching your screen share throughout the entire code interview. 
 If you counter a mind blocking issue, you may search the internet for help (this is part of problem solving).
+During the code interview, you will be ask to explain your code and design decision.
+If you have any question, please ask me at anytime during the session.
 
 You will have to fork this [code interview](https://github.com/wangkanai/interview/fork) repo and clone it to your local development machine. 
 Prepare your development environment and create your pull request to the original repo. 
