@@ -31,6 +31,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Architecture", "Architectur
 		Architecture\readme.md = Architecture\readme.md
 		Architecture\db.ps1 = Architecture\db.ps1
 		Architecture\.gitignore = Architecture\.gitignore
+		Architecture\Directory.Build.props = Architecture\Directory.Build.props
+		Architecture\Directory.Build.targets = Architecture\Directory.Build.targets
 	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wangkanai.Interview.Portal.Client", "Architecture\src\Client\Wangkanai.Interview.Portal.Client.csproj", "{90C587A7-8C04-4C48-BD3F-B52990708D1A}"
