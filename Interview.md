@@ -14,6 +14,9 @@ Thursday 8th August 2024
 3. 13:00 - 14:00  Malkesh Mangukiya
 4. 14:30 - 15:30  Muhammad Arif
 5. 16:00 - 17:00  Ashu Shukla
+6. 17:00 - 18:00  
+7. 18:00 - 19:00
+8. 19:00 - 20:00
 
 This is GMT+7 Bangkok timezone, please convert to your local timezone.
 
