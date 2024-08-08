@@ -72,8 +72,38 @@ Our vertical slice architecture will be setup in the following project structure
 1. [Centrally package management](https://learn.microsoft.com/en-us/nuget/consume-packages/central-package-management)
 2. [Seq Centralized structured Logs](https://datalust.co/seq)
       
+## Interview scoring method
 
-
+1. Read the code interview instruction clear before the session
+2. On time for the code interview
+3. Able to start the code interview into development environment asap
+4. Good understand of the solution folder structure and follow the setup mandate
+5. Good practise in SOLID - Single-responsibility principle:
+6. Good practise in SOLID - Open–closed principle
+7. Good practise in SOLID - Liskov substitution principle
+8. Good practise in SOLID - Interface segregation principle
+9. Good practise in SOLID - Dependency inversion principle
+10. Good practise in dependancy injection and service lifecycle
+11. Good practise in Domain-Driven-Design
+12. Good practise in Test-Driven-Design
+13. Good practise in Event-Driven-Design
+14. Good understand of Vertical Slice Architecture
+15. Good understand of ASP.NET Core Web Api
+16. Good understand of ASP.NET Core Hosted Worker Service
+17. Good understand of ASP.NET Identity and how to extend it features
+18. Good understand of ASP.NET Blazor Server
+19. Good understand of ASP.NET Blazor WebAssembly
+20. Good understand of ASP.NET Blazor render mode
+21. Good understand of Entity Framework Core
+22. Good understand of Postgres and Npg provider
+23. Good understand of .NET Aspire orchestration
+24. Good understand of Xunit testing framework
+25. Good understand of Microservice
+26. Good practise of clean code
+27. [Bonus] Centrally package management
+28. [Bonus] Seq Centralized structured Logs
+29. [Bonus] Stack trace debugging for root cause analyze
+30. [Bonus] Sql performance obtimization
 
 
 
