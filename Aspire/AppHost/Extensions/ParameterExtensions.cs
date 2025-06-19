@@ -1,4 +1,4 @@
-// Copyright (c) 2024 Mula-X, All Rights Reserved.
+// Copyright (c) 2014-2025 Sarin Na Wangkanai, All Rights Reserved. Apache License, Version 2.0
 
 using System.Diagnostics;
 using System.Reflection;
@@ -15,7 +15,7 @@ internal static class ParameterExtensions
 {
    public static IResourceBuilder<ParameterResource> CreateStablePassword(this IDistributedApplicationBuilder builder, string name)
       => builder.CreateStablePassword(name, lower: true, upper: true, numeric: true, special: true, minLower: 1, minUpper: 1, minNumeric: 1, minSpecial: 1);
-   
+
    public static IResourceBuilder<ParameterResource> CreateStablePassword(
       this IDistributedApplicationBuilder builder,
       string                              name,
@@ -58,7 +58,7 @@ internal static class ParameterExtensions
 
       return ResourceBuilder.Create(parameterResource, builder);
    }
-   
+
    private static string GetParameterValue(IConfiguration configuration,
       string                                              name,
       ParameterDefault?                                   parameterDefault)
@@ -69,7 +69,7 @@ internal static class ParameterExtensions
              ?? throw new
                 DistributedApplicationException($"Parameter resource could not be used because configuration key '{configurationKey}' is missing and the Parameter has no default value.");
    }
-   
+
    class UserSecretsParameterDefault(string applicationName, string parameterName, ParameterDefault parameterDefault)
       : ParameterDefault
    {
@@ -114,7 +114,7 @@ internal static class ParameterExtensions
          return false;
       }
    }
-   
+
    class ResourceBuilder
    {
       public static IResourceBuilder<T> Create<T>(T resource, IDistributedApplicationBuilder distributedApplicationBuilder)
