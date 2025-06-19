@@ -21,7 +21,7 @@
 	</ItemGroup>
 
 	<ItemGroup>
-		<ProjectReference Include="..\..\aspire\ServiceDefaults\Wangkanai.Interview.ServiceDefaults.csproj"/>
+		<ProjectReference Include="..\..\Aspire\ServiceDefaults\Wangkanai.Interview.ServiceDefaults.csproj" />
 		<ProjectReference Include="..\Client\Wangkanai.Interview.Client.csproj" />
 		<ProjectReference Include="..\Infrastructure\Wangkanai.Interview.Infrastructure.csproj" />
 	</ItemGroup>
