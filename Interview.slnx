@@ -1,4 +1,7 @@
 ﻿<Solution>
+  <Folder Name="/.github/">
+    <File Path=".github\FUNDING.yml" />
+  </Folder>
   <Folder Name="/.solutions/">
     <File Path=".editorconfig" />
     <File Path=".gitignore" />
