@@ -31,10 +31,4 @@
   <Folder Name="/Aspire/">
     <File Path="Aspire\readme.md" />
   </Folder>
-  <Folder Name="/Microservices/">
-    <File Path="Microservices\readme.md" />
-  </Folder>
-  <Folder Name="/Portal/">
-    <File Path="Portal\readme.md" />
-  </Folder>
 </Solution>
