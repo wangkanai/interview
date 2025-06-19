@@ -8,11 +8,10 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Domain\Wangkanai.Interview.Portal.Domain.csproj" />
-  </ItemGroup>
-
-  <ItemGroup>
     <PackageReference Include="Microsoft.EntityFrameworkCore.Design" PrivateAssets="all"/>
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Domain\Wangkanai.Interview.Portal.Domain.csproj" />
+  </ItemGroup>
 </Project>

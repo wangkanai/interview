@@ -1,9 +1,6 @@
 <Project Sdk="Microsoft.NET.Sdk.Worker">
 
   <PropertyGroup>
-    <TargetFramework>net8.0</TargetFramework>
-    <Nullable>enable</Nullable>
-    <ImplicitUsings>enable</ImplicitUsings>
     <UserSecretsId>dotnet-Wangkanai.Interview.Portal.Migration-d95d4492-c0ae-492d-a8ff-59d0ae680ad4</UserSecretsId>
   </PropertyGroup>
 
@@ -15,7 +12,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\aspire\ServiceDefaults\Wangkanai.Interview.ServiceDefaults.csproj" />
+    <ProjectReference Include="..\..\Aspire\ServiceDefaults\Wangkanai.Interview.ServiceDefaults.csproj" />
     <ProjectReference Include="..\Infrastructure\Wangkanai.Interview.Portal.Infrastructure.csproj" />
   </ItemGroup>
 </Project>
