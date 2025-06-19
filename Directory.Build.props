@@ -1,6 +1,22 @@
 <Project>
 	<PropertyGroup>
+		<Version>0.0.0</Version>
+		<Authors>Sarin Na Wangkanai</Authors>
 		<Company>Wangkanai</Company>
 		<Description>Code Interview</Description>
+		<Copyright>©2024-2025 Sarin Na Wangkanai, All rights reserved</Copyright>
+
+		<RepositoryType>git</RepositoryType>
+		<RepositoryUrl>git://github.com/wangkanai/interview</RepositoryUrl>
+
+		<PackageProjectUrl>https://github.com/wangkanai/interview</PackageProjectUrl>
+		<PackageLicense>https://github.com/wangkanai/interview/blob/main/LICENSE</PackageLicense>
+		<PackageLicenseExpression>Apache-2.0</PackageLicenseExpression>
+	</PropertyGroup>
+
+	<PropertyGroup>
+		<TargetFramework>net9.0</TargetFramework>
+		<Nullable>enable</Nullable>
+		<ImplicitUsings>enable</ImplicitUsings>
 	</PropertyGroup>
 </Project>
