@@ -15,7 +15,7 @@ internal class MigrationWorker<T>(IServiceProvider services, IHostApplicationLif
    where T : DbContext
 {
    public const string ActivitySourceName = "Migration";
-   
+
    private readonly ActivitySource _activitySource = new(ActivitySourceName);
 
    protected override async Task ExecuteAsync(CancellationToken stoppingToken)
@@ -36,7 +36,7 @@ internal class MigrationWorker<T>(IServiceProvider services, IHostApplicationLif
          throw;
       }
    }
-   
+
    private static async Task EnsureDatabaseAsync(T context, CancellationToken cancellationToken)
    {
       var dbCreator = context.GetService<IRelationalDatabaseCreator>();
@@ -45,7 +45,7 @@ internal class MigrationWorker<T>(IServiceProvider services, IHostApplicationLif
       await strategy.ExecuteAsync(async () =>
       {
          // Create the database if it does not exist.
-         // Do this first so there is then a database to start a transaction against.
+         // Do this first, so there is then a database to start a transaction against.
          if (!await dbCreator.ExistsAsync(cancellationToken))
             await dbCreator.CreateAsync(cancellationToken);
       });

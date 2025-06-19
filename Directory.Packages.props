@@ -1,13 +1,13 @@
 <Project>
   <PropertyGroup>
     <ManagePackageVersionsCentrally>true</ManagePackageVersionsCentrally>
-    <FrameworkVersion>8.0.7</FrameworkVersion>
-    <EntityFrameworkVersion>8.0.7</EntityFrameworkVersion>
-    <AspireVersion>8.1.0</AspireVersion>
+    <FrameworkVersion>8.0.17</FrameworkVersion>
+    <EntityFrameworkVersion>8.0.17</EntityFrameworkVersion>
+    <AspireVersion>9.3.1</AspireVersion>
   </PropertyGroup>
   <ItemGroup>
     <!--sourcelink-->
-    <PackageVersion Include="AspNetCore.HealthChecks.NpgSql" Version="8.0.1" />
+    <PackageVersion Include="AspNetCore.HealthChecks.NpgSql" Version="9.0.0" />
     <PackageVersion Include="Microsoft.SourceLink.AzureRepos.Git" Version="8.0.0" />
     <PackageVersion Include="Microsoft.SourceLink.GitHub" Version="8.0.0" />
     <!--framework-->
@@ -42,10 +42,10 @@
     <PackageVersion Include="Microsoft.Extensions.Identity.Stores" Version="$(FrameworkVersion)" />
     <PackageVersion Include="Microsoft.Extensions.Hosting" Version="8.0.0" />
     <PackageVersion Include="Microsoft.Extensions.Hosting.Abstractions" Version="8.0.0" />
-    <PackageVersion Include="Microsoft.Extensions.Http.Resilience" Version="8.7.0" />
+    <PackageVersion Include="Microsoft.Extensions.Http.Resilience" Version="9.6.0" />
     <PackageVersion Include="Microsoft.Extensions.Logging.Debug" Version="8.0.0" />
-    <PackageVersion Include="Microsoft.Extensions.ServiceDiscovery" Version="8.1.0" />
-    <PackageVersion Include="Microsoft.Extensions.ServiceDiscovery.Yarp" Version="8.1.0" />
+    <PackageVersion Include="Microsoft.Extensions.ServiceDiscovery" Version="9.3.1" />
+    <PackageVersion Include="Microsoft.Extensions.ServiceDiscovery.Yarp" Version="9.3.1" />
     <!--entityframework-->
     <PackageVersion Include="Microsoft.Data.SqlClient" Version="5.2.1" />
     <PackageVersion Include="Microsoft.EntityFrameworkCore" Version="$(EntityFrameworkVersion)" />
@@ -54,7 +54,7 @@
     <PackageVersion Include="Microsoft.EntityFrameworkCore.Tools" Version="$(EntityFrameworkVersion)" PrivateAssets="all" />
     <PackageVersion Include="Microsoft.EntityFrameworkCore.Design" Version="$(EntityFrameworkVersion)" PrivateAssets="all" />
     <PackageVersion Include="Microsoft.TestPlatform.TestHost" Version="17.10.0" />
-    <PackageVersion Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="8.0.4" />
+    <PackageVersion Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="9.0.4" />
     <PackageVersion Include="Pomelo.EntityFrameworkCore.MySql" Version="8.0.2" />
     <!--maui-->
     <PackageVersion Include="Microsoft.Maui.Controls" Version="$(MauiVersion)" />
@@ -69,15 +69,15 @@
     <PackageVersion Include="Grpc.Net.ClientFactory" Version="2.64.0" />
     <!--telemetry-->
     <PackageVersion Include="Microsoft.ApplicationInsights.AspNetCore" Version="2.22.0" />
-    <PackageVersion Include="OpenTelemetry.Exporter.OpenTelemetryProtocol" Version="1.9.0" />
-    <PackageVersion Include="OpenTelemetry.Extensions.Hosting" Version="1.9.0" />
-    <PackageVersion Include="OpenTelemetry.Instrumentation.AspNetCore" Version="1.9.0" />
-    <PackageVersion Include="OpenTelemetry.Instrumentation.Http" Version="1.9.0" />
-    <PackageVersion Include="OpenTelemetry.Instrumentation.Runtime" Version="1.9.0" />
+    <PackageVersion Include="OpenTelemetry.Exporter.OpenTelemetryProtocol" Version="1.12.0" />
+    <PackageVersion Include="OpenTelemetry.Extensions.Hosting" Version="1.12.0" />
+    <PackageVersion Include="OpenTelemetry.Instrumentation.AspNetCore" Version="1.12.0" />
+    <PackageVersion Include="OpenTelemetry.Instrumentation.Http" Version="1.12.0" />
+    <PackageVersion Include="OpenTelemetry.Instrumentation.Runtime" Version="1.12.0" />
     <PackageVersion Include="OpenTelemetry.Api" Version="1.9.0" />
-    <PackageVersion Include="Serilog" Version="4.0.0" />
+    <PackageVersion Include="Serilog" Version="4.3.0" />
     <PackageVersion Include="Serilog.Sinks.Console" Version="6.0.0" />
-    <PackageVersion Include="Serilog.Sinks.Seq" Version="8.0.0" />
+    <PackageVersion Include="Serilog.Sinks.Seq" Version="9.0.0" />
     <!--seq-->
     <PackageVersion Include="Seq.Extensions.Logging" Version="8.0.0" />
     <!--health-->
@@ -99,13 +99,13 @@
     <PackageVersion Include="FluentValidation.AspNetCore" Version="11.3.0" />
     <!--misculaneous-->
     <PackageVersion Include="Bogus" Version="35.6.0" />
-    <PackageVersion Include="Yarp.ReverseProxy" Version="2.1.0" />
+    <PackageVersion Include="Yarp.ReverseProxy" Version="2.3.0" />
     <!--benchmarks-->
     <PackageVersion Include="BenchmarkDotNet" Version="0.13.12" />
     <!--wangkanai-->
     <PackageVersion Include="Wangkanai.System" Version="5.0.0" />
     <PackageVersion Include="Wangkanai.Validation" Version="4.1.0" />
-    <PackageVersion Include="Wangkanai.Domain" Version="4.4.0" />
+    <PackageVersion Include="Wangkanai.Domain" Version="5.0.0-Beta-7" />
     <PackageVersion Include="Wangkanai.EntityFramework" Version="3.2.0" />
     <PackageVersion Include="Wangkanai.Mvc" Version="3.0.0" />
     <PackageVersion Include="Wangkanai.Microservice" Version="0.1.0" />
