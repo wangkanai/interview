@@ -2,7 +2,6 @@
 
   <PropertyGroup>
     <UserSecretsId>dotnet-Wangkanai.Interview.Portal.Migration-d95d4492-c0ae-492d-a8ff-59d0ae680ad4</UserSecretsId>
-    <RootNamespace>Wangkanai.Interview.Portal.Migration</RootNamespace>
   </PropertyGroup>
 
   <ItemGroup>
