@@ -1,8 +1,6 @@
-// Copyright (c) 2024 Mula-X, All Rights Reserved.
+// Copyright (c) 2014-2025 Sarin Na Wangkanai, All Rights Reserved. Apache License, Version 2.0
 
 using HealthChecks.NpgSql;
-
-using Wangkanai.Interview.AppHost.Hosting;
 
 using HealthCheckAnnotation = Wangkanai.Interview.AppHost.Hosting.HealthCheckAnnotation;
 
