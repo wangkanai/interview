@@ -5,10 +5,12 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" PrivateAssets="all"/>
+    <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" />
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Domain\Wangkanai.Interview.Portal.Domain.csproj" />
+    <ProjectReference Include="..\Application\Wangkanai.Interview.Application.csproj" />
   </ItemGroup>
+
+
 </Project>

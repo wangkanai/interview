@@ -18,10 +18,10 @@
     <Project Path="Aspire\AppHost\Wangkanai.Interview.AppHost.csproj" Type="Classic C#" />
     <Project Path="Aspire\ServiceDefaults\Wangkanai.Interview.ServiceDefaults.csproj" Type="Classic C#" />
   </Folder>
-  <Project Path="src\Application\Wangkanai.Interview.Portal.Application.csproj" Type="Classic C#" />
-  <Project Path="src\Client\Wangkanai.Interview.Portal.Client.csproj" Type="Classic C#" />
-  <Project Path="src\Domain\Wangkanai.Interview.Portal.Domain.csproj" Type="Classic C#" />
-  <Project Path="src\Infrastructure\Wangkanai.Interview.Portal.Infrastructure.csproj" Type="Classic C#" />
-  <Project Path="src\Migration\Wangkanai.Interview.Portal.Migration.csproj" Type="Classic C#" />
-  <Project Path="src\Server\Wangkanai.Interview.Portal.csproj" Type="Classic C#" />
+  <Project Path="src\Application\Wangkanai.Interview.Application.csproj" Type="Classic C#" />
+  <Project Path="src\Client\Wangkanai.Interview.Client.csproj" Type="Classic C#" />
+  <Project Path="src\Domain\Wangkanai.Interview.Domain.csproj" Type="Classic C#" />
+  <Project Path="src\Infrastructure\Wangkanai.Interview.Infrastructure.csproj" Type="Classic C#" />
+  <Project Path="src\Migration\Wangkanai.Interview.Migration.csproj" Type="Classic C#" />
+  <Project Path="src\Server\Wangkanai.Interview.csproj" Type="Classic C#" />
 </Solution>
