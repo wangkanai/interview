@@ -12,6 +12,7 @@
     <File Path="Directory.Build.props" />
     <File Path="Directory.Build.targets" />
     <File Path="Directory.Packages.props" />
+    <File Path="SonarQube.Analysis.xml" />
   </Folder>
   <Folder Name="/Architecture/">
     <Project Path="Architecture\src\Application\Wangkanai.Interview.Portal.Application.csproj" Type="Classic C#" />
