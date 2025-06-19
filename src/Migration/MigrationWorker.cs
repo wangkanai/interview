@@ -32,7 +32,7 @@ internal class MigrationWorker<T>(IServiceProvider services, IHostApplicationLif
       }
       catch (Exception ex)
       {
-         activity?.RecordException(ex);
+         activity?.AddException(ex);
          throw;
       }
    }
