@@ -1,23 +1,23 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
-  <PropertyGroup>
-    <OutputType>Exe</OutputType>
-    <TargetFramework>net8.0</TargetFramework>
-    <ImplicitUsings>enable</ImplicitUsings>
-    <Nullable>enable</Nullable>
-    <UserSecretsId>3efe3592-1623-4e85-a0ea-4b362783beff</UserSecretsId>
-  </PropertyGroup>
+	<Sdk Name="Aspire.AppHost.Sdk" Version="9.0.0" />
 
-  <ItemGroup>
-    <PackageReference Include="Aspire.Hosting.AppHost"  />
-    <PackageReference Include="Aspire.Hosting.PostgreSQL"/>
-    <PackageReference Include="Aspire.Hosting.Seq"  />
-    <PackageReference Include="AspNetCore.HealthChecks.NpgSql" />
-  </ItemGroup>
+	<PropertyGroup>
+		<OutputType>Exe</OutputType>
+		<IsAspireHost>true</IsAspireHost>
+		<UserSecretsId>3efe3592-1623-4e85-a0ea-4b362783beff</UserSecretsId>
+	</PropertyGroup>
 
-  <ItemGroup>
-    <ProjectReference Include="..\..\src\Migration\Wangkanai.Interview.Portal.Migration.csproj" />
-    <ProjectReference Include="..\..\src\Server\Wangkanai.Interview.Portal.csproj" />
-  </ItemGroup>
+	<ItemGroup>
+		<PackageReference Include="Aspire.Hosting.AppHost" />
+		<PackageReference Include="Aspire.Hosting.PostgreSQL" />
+		<PackageReference Include="Aspire.Hosting.Seq" />
+		<PackageReference Include="AspNetCore.HealthChecks.NpgSql" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<ProjectReference Include="..\..\src\Migration\Wangkanai.Interview.Portal.Migration.csproj" />
+		<ProjectReference Include="..\..\src\Server\Wangkanai.Interview.Portal.csproj" />
+	</ItemGroup>
 
 </Project>

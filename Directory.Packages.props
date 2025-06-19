@@ -1,13 +1,12 @@
 <Project>
   <PropertyGroup>
     <ManagePackageVersionsCentrally>true</ManagePackageVersionsCentrally>
-    <FrameworkVersion>8.0.17</FrameworkVersion>
-    <EntityFrameworkVersion>8.0.17</EntityFrameworkVersion>
+    <FrameworkVersion>9.0.6</FrameworkVersion>
+    <EntityFrameworkVersion>9.0.6</EntityFrameworkVersion>
     <AspireVersion>9.3.1</AspireVersion>
   </PropertyGroup>
   <ItemGroup>
     <!--sourcelink-->
-    <PackageVersion Include="AspNetCore.HealthChecks.NpgSql" Version="9.0.0" />
     <PackageVersion Include="Microsoft.SourceLink.AzureRepos.Git" Version="8.0.0" />
     <PackageVersion Include="Microsoft.SourceLink.GitHub" Version="8.0.0" />
     <!--framework-->
@@ -18,29 +17,13 @@
     <PackageVersion Include="Microsoft.AspNetCore.Components.WebAssembly.Authentication" Version="$(FrameworkVersion)" />
     <PackageVersion Include="Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore" Version="$(FrameworkVersion)" />
     <PackageVersion Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="$(FrameworkVersion)" />
-    <!--aspire-->
-    <PackageVersion Include="Aspire.Hosting.AppHost" Version="$(AspireVersion)" />
-    <PackageVersion Include="Aspire.Hosting.Testing" Version="$(AspireVersion)" />
-    <PackageVersion Include="Aspire.Hosting.MySql" Version="$(AspireVersion)" />
-    <PackageVersion Include="Aspire.Hosting.PostgreSQL" Version="$(AspireVersion)" />
-    <PackageVersion Include="Aspire.Hosting.RabbitMQ" Version="$(AspireVersion)" />
-    <PackageVersion Include="Aspire.Hosting.Redis" Version="$(AspireVersion)" />
-    <PackageVersion Include="Aspire.Hosting.Swagger" Version="$(AspireVersion)" />
-    <PackageVersion Include="Aspire.Hosting.SwaggerUI" Version="$(AspireVersion)" />
-    <PackageVersion Include="Aspire.Hosting.Seq" Version="$(AspireVersion)" />
-    <PackageVersion Include="Aspire.Dashboard" Version="$(AspireVersion)" />
-    <PackageVersion Include="Aspire.Seq" Version="$(AspireVersion)" />
-    <PackageVersion Include="Aspire.StackExchange.Redis" Version="$(AspireVersion)" />
-    <PackageVersion Include="Aspire.PostgreSQL" Version="$(AspireVersion)" />
-    <PackageVersion Include="Aspire.Npgsql" Version="$(AspireVersion)" />
-    <PackageVersion Include="Aspire.Npgsql.EntityFrameworkCore.PostgreSQL" Version="$(AspireVersion)" />
-    <PackageVersion Include="Aspire.Pomelo.EntityFrameworkCore.MySql" Version="$(AspireVersion)" />
-    <PackageVersion Include="Aspire.RabbitMQ" Version="$(AspireVersion)" />
-    <PackageVersion Include="Aspire.RabbitMQ.Client" Version="$(AspireVersion)" />
+    <!--aspnetcore-->
+    <PackageVersion Include="AspNetCore.HealthChecks.NpgSql" Version="9.0.0" />
+    <PackageVersion Include="AspNetCore.HealthChecks.Uris" Version="8.0.1" />
     <!--extensions-->
     <PackageVersion Include="Microsoft.Extensions.Identity.Core" Version="$(FrameworkVersion)" />
     <PackageVersion Include="Microsoft.Extensions.Identity.Stores" Version="$(FrameworkVersion)" />
-    <PackageVersion Include="Microsoft.Extensions.Hosting" Version="8.0.0" />
+    <PackageVersion Include="Microsoft.Extensions.Hosting" Version="9.0.6" />
     <PackageVersion Include="Microsoft.Extensions.Hosting.Abstractions" Version="8.0.0" />
     <PackageVersion Include="Microsoft.Extensions.Http.Resilience" Version="9.6.0" />
     <PackageVersion Include="Microsoft.Extensions.Logging.Debug" Version="8.0.0" />
@@ -60,6 +43,25 @@
     <PackageVersion Include="Microsoft.Maui.Controls" Version="$(MauiVersion)" />
     <PackageVersion Include="Microsoft.Maui.Controls.Compatibility" Version="$(MauiVersion)" />
     <PackageVersion Include="Microsoft.AspNetCore.Components.WebView.Maui" Version="$(MauiVersion)" />
+    <!--aspire-->
+    <PackageVersion Include="Aspire.Hosting.AppHost" Version="$(AspireVersion)" />
+    <PackageVersion Include="Aspire.Hosting.Testing" Version="$(AspireVersion)" />
+    <PackageVersion Include="Aspire.Hosting.MySql" Version="$(AspireVersion)" />
+    <PackageVersion Include="Aspire.Hosting.PostgreSQL" Version="$(AspireVersion)" />
+    <PackageVersion Include="Aspire.Hosting.RabbitMQ" Version="$(AspireVersion)" />
+    <PackageVersion Include="Aspire.Hosting.Redis" Version="$(AspireVersion)" />
+    <PackageVersion Include="Aspire.Hosting.Swagger" Version="$(AspireVersion)" />
+    <PackageVersion Include="Aspire.Hosting.SwaggerUI" Version="$(AspireVersion)" />
+    <PackageVersion Include="Aspire.Hosting.Seq" Version="$(AspireVersion)" />
+    <PackageVersion Include="Aspire.Dashboard" Version="$(AspireVersion)" />
+    <PackageVersion Include="Aspire.Seq" Version="$(AspireVersion)" />
+    <PackageVersion Include="Aspire.StackExchange.Redis" Version="$(AspireVersion)" />
+    <PackageVersion Include="Aspire.PostgreSQL" Version="$(AspireVersion)" />
+    <PackageVersion Include="Aspire.Npgsql" Version="$(AspireVersion)" />
+    <PackageVersion Include="Aspire.Npgsql.EntityFrameworkCore.PostgreSQL" Version="$(AspireVersion)" />
+    <PackageVersion Include="Aspire.Pomelo.EntityFrameworkCore.MySql" Version="$(AspireVersion)" />
+    <PackageVersion Include="Aspire.RabbitMQ" Version="$(AspireVersion)" />
+    <PackageVersion Include="Aspire.RabbitMQ.Client" Version="$(AspireVersion)" />
     <!--messaging-->
     <PackageVersion Include="MediatR" Version="12.4.0" />
     <PackageVersion Include="MediatR.Extensions.Microsoft.DependencyInjection" Version="12.2.0" />
@@ -80,14 +82,12 @@
     <PackageVersion Include="Serilog.Sinks.Seq" Version="9.0.0" />
     <!--seq-->
     <PackageVersion Include="Seq.Extensions.Logging" Version="8.0.0" />
-    <!--health-->
-    <PackageVersion Include="AspNetCore.HealthChecks.Uris" Version="8.0.1" />
     <!--swashbuckle-->
     <PackageVersion Include="Swashbuckle.AspNetCore" Version="6.6.2" />
     <PackageVersion Include="Swashbuckle.AspNetCore.SwaggerGen" Version="6.6.2" />
     <!--tests -->
     <PackageVersion Include="Microsoft.AspNetCore.TestHost" Version="$(FrameworkVersion)" />
-    <PackageVersion Include="Microsoft.NET.Test.Sdk" Version="17.10.0" />
+    <PackageVersion Include="Microsoft.NET.Test.Sdk" Version="17.14.1" />
     <PackageVersion Include="Moq" Version="4.20.70" />
     <PackageVersion Include="xunit" Version="2.9.0" />
     <PackageVersion Include="xunit.runner.visualstudio" Version="2.8.2" PrivateAssets="all" />
@@ -103,7 +103,7 @@
     <!--benchmarks-->
     <PackageVersion Include="BenchmarkDotNet" Version="0.13.12" />
     <!--wangkanai-->
-    <PackageVersion Include="Wangkanai.System" Version="5.0.0" />
+    <PackageVersion Include="Wangkanai.System" Version="5.7.0 " />
     <PackageVersion Include="Wangkanai.Validation" Version="4.1.0" />
     <PackageVersion Include="Wangkanai.Domain" Version="5.0.0-Beta-7" />
     <PackageVersion Include="Wangkanai.EntityFramework" Version="3.2.0" />
