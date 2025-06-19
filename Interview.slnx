@@ -1,12 +1,17 @@
 ﻿<Solution>
   <Folder Name="/.github/">
     <File Path=".github\FUNDING.yml" />
+    <File Path=".github\workflows\dotnet.yml" />
   </Folder>
   <Folder Name="/.solutions/">
     <File Path=".editorconfig" />
     <File Path=".gitignore" />
     <File Path="README.md" />
     <File Path="Interview.md" />
+    <File Path="db.ps1" />
+    <File Path="Directory.Build.props" />
+    <File Path="Directory.Build.targets" />
+    <File Path="Directory.Packages.props" />
   </Folder>
   <Folder Name="/Architecture/">
     <Project Path="Architecture\src\Application\Wangkanai.Interview.Portal.Application.csproj" Type="Classic C#" />
@@ -16,11 +21,7 @@
     <Project Path="Architecture\src\Migration\Wangkanai.Interview.Portal.Migration.csproj" Type="Classic C#" />
     <Project Path="Architecture\src\Server\Wangkanai.Interview.Portal.csproj" Type="Classic C#" />
     <File Path="Architecture\readme.md" />
-    <File Path="Architecture\db.ps1" />
     <File Path="Architecture\.gitignore" />
-    <File Path="Architecture\Directory.Build.targets" />
-    <File Path="Architecture\Directory.Build.props" />
-    <File Path="Architecture\Directory.Packages.props" />
   </Folder>
   <Folder Name="/Architecture/Aspire/">
     <Project Path="Architecture\aspire\AppHost\Wangkanai.Interview.AppHost.csproj" Type="Classic C#" />
