@@ -3,7 +3,7 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
-namespace Wangkanai.Interview.Portal.Extensions;
+namespace Wangkanai.Interview.Extensions;
 
 internal static class PostgresConfigurationExtensions
 {

@@ -3,9 +3,9 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
-using Wangkanai.Interview.Portal.Extensions;
+using Wangkanai.Interview.Extensions;
 
-namespace Wangkanai.Interview.Portal.Blogs;
+namespace Wangkanai.Interview.Blogs;
 
 public class BlogConfiguration : IEntityTypeConfiguration<Blog>
 {

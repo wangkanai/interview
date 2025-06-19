@@ -1,11 +1,11 @@
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 
-using Wangkanai.Interview.Portal.Identity;
+using Wangkanai.Interview.Identity;
 
-namespace Wangkanai.Interview.Portal;
+namespace Wangkanai.Interview;
 
-public class ApplicationDbContext(DbContextOptions<ApplicationDbContext> options) 
+public class ApplicationDbContext(DbContextOptions<ApplicationDbContext> options)
    : IdentityDbContext<ApplicationUser>(options)
 {
    protected override void OnModelCreating(ModelBuilder builder)

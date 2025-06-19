@@ -1,4 +1,4 @@
-using Wangkanai.Interview.Portal.Client;
+using Wangkanai.Interview.Client;
 using Microsoft.AspNetCore.Components.Authorization;
 using Microsoft.AspNetCore.Components.WebAssembly.Hosting;
 

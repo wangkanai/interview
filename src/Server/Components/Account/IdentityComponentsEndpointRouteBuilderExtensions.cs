@@ -7,9 +7,9 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Primitives;
 
-using Wangkanai.Interview.Portal.Components.Account.Pages;
-using Wangkanai.Interview.Portal.Components.Account.Pages.Manage;
-using Wangkanai.Interview.Portal.Identity;
+using Wangkanai.Interview.Components.Account.Pages;
+using Wangkanai.Interview.Components.Account.Pages.Manage;
+using Wangkanai.Interview.Identity;
 
 namespace Microsoft.AspNetCore.Routing;
 

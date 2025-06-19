@@ -1,8 +1,8 @@
 using Microsoft.AspNetCore.Identity;
 
-using Wangkanai.Interview.Portal.Identity;
+using Wangkanai.Interview.Identity;
 
-namespace Wangkanai.Interview.Portal.Components.Account;
+namespace Wangkanai.Interview.Components.Account;
 
 internal sealed class IdentityUserAccessor(UserManager<ApplicationUser> userManager, IdentityRedirectManager redirectManager)
 {

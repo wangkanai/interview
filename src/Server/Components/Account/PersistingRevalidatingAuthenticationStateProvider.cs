@@ -7,10 +7,10 @@ using Microsoft.AspNetCore.Components.Web;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.Extensions.Options;
 
-using Wangkanai.Interview.Portal.Client;
-using Wangkanai.Interview.Portal.Identity;
+using Wangkanai.Interview.Client;
+using Wangkanai.Interview.Identity;
 
-namespace Wangkanai.Interview.Portal.Components.Account;
+namespace Wangkanai.Interview.Components.Account;
 
 // This is a server-side AuthenticationStateProvider that revalidates the security stamp for the connected user
 // every 30 minutes an interactive circuit is connected. It also uses PersistentComponentState to flow the

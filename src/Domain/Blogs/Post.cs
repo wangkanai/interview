@@ -2,7 +2,7 @@
 
 using Wangkanai.Domain;
 
-namespace Wangkanai.Interview.Portal.Blogs;
+namespace Wangkanai.Interview.Blogs;
 
 public sealed class Post : UserAuditableEntity<int>
 {

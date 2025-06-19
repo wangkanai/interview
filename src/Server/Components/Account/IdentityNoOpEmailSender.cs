@@ -1,9 +1,9 @@
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.UI.Services;
 
-using Wangkanai.Interview.Portal.Identity;
+using Wangkanai.Interview.Identity;
 
-namespace Wangkanai.Interview.Portal.Components.Account;
+namespace Wangkanai.Interview.Components.Account;
 
 // Remove the "else if (EmailSender is IdentityNoOpEmailSender)" block from RegisterConfirmation.razor after updating with a real implementation.
 internal sealed class IdentityNoOpEmailSender : IEmailSender<ApplicationUser>

@@ -7,7 +7,7 @@ using Microsoft.EntityFrameworkCore;
 using Npgsql.EntityFrameworkCore.PostgreSQL;
 using Npgsql.EntityFrameworkCore.PostgreSQL.Infrastructure;
 
-namespace Wangkanai.Interview.Portal.Migration.Extensions;
+namespace Wangkanai.Interview.Migration.Extensions;
 
 public static class EntityFrameworkServiceCollectionExtensions
 {

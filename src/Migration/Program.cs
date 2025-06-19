@@ -1,6 +1,6 @@
-using Wangkanai.Interview.Portal;
-using Wangkanai.Interview.Portal.Migration;
-using Wangkanai.Interview.Portal.Migration.Extensions;
+using Wangkanai.Interview;
+using Wangkanai.Interview.Migration;
+using Wangkanai.Interview.Migration.Extensions;
 
 var builder = Host.CreateApplicationBuilder(args);
 

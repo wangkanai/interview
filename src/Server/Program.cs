@@ -1,10 +1,10 @@
 using Microsoft.AspNetCore.Components.Authorization;
 using Microsoft.AspNetCore.Identity;
 
-using Wangkanai.Interview.Portal;
-using Wangkanai.Interview.Portal.Components;
-using Wangkanai.Interview.Portal.Components.Account;
-using Wangkanai.Interview.Portal.Identity;
+using Wangkanai.Interview;
+using Wangkanai.Interview.Components;
+using Wangkanai.Interview.Components.Account;
+using Wangkanai.Interview.Identity;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -63,7 +63,7 @@ app.UseAntiforgery();
 app.MapRazorComponents<App>()
    .AddInteractiveServerRenderMode()
    .AddInteractiveWebAssemblyRenderMode()
-   .AddAdditionalAssemblies(typeof(Wangkanai.Interview.Portal.Client._Imports).Assembly);
+   .AddAdditionalAssemblies(typeof(Wangkanai.Interview.Client._Imports).Assembly);
 
 // Add additional endpoints required by the Identity /Account Razor components.
 app.MapAdditionalIdentityEndpoints();

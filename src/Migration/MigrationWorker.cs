@@ -8,7 +8,7 @@ using Microsoft.EntityFrameworkCore.Storage;
 
 using OpenTelemetry.Trace;
 
-namespace Wangkanai.Interview.Portal.Migration;
+namespace Wangkanai.Interview.Migration;
 
 internal class MigrationWorker<T>(IServiceProvider services, IHostApplicationLifetime host)
    : BackgroundService

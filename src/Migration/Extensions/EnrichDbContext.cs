@@ -2,7 +2,7 @@
 
 using Aspire.Npgsql.EntityFrameworkCore.PostgreSQL;
 
-namespace Wangkanai.Interview.Portal.Migration.Extensions;
+namespace Wangkanai.Interview.Migration.Extensions;
 
 public static class EnrichDbContext
 {

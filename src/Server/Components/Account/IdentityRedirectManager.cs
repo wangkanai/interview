@@ -1,7 +1,7 @@
 using System.Diagnostics.CodeAnalysis;
 using Microsoft.AspNetCore.Components;
 
-namespace Wangkanai.Interview.Portal.Components.Account;
+namespace Wangkanai.Interview.Components.Account;
 
 internal sealed class IdentityRedirectManager(NavigationManager navigationManager)
 {
