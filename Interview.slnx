@@ -14,21 +14,15 @@
     <File Path="Directory.Packages.props" />
     <File Path="SonarQube.Analysis.xml" />
   </Folder>
-  <Folder Name="/Architecture/">
-    <Project Path="Architecture\src\Application\Wangkanai.Interview.Portal.Application.csproj" Type="Classic C#" />
-    <Project Path="Architecture\src\Client\Wangkanai.Interview.Portal.Client.csproj" Type="Classic C#" />
-    <Project Path="Architecture\src\Domain\Wangkanai.Interview.Portal.Domain.csproj" Type="Classic C#" />
-    <Project Path="Architecture\src\Infrastructure\Wangkanai.Interview.Portal.Infrastructure.csproj" Type="Classic C#" />
-    <Project Path="Architecture\src\Migration\Wangkanai.Interview.Portal.Migration.csproj" Type="Classic C#" />
-    <Project Path="Architecture\src\Server\Wangkanai.Interview.Portal.csproj" Type="Classic C#" />
-    <File Path="Architecture\readme.md" />
-    <File Path="Architecture\.gitignore" />
-  </Folder>
-  <Folder Name="/Architecture/Aspire/">
-    <Project Path="Architecture\aspire\AppHost\Wangkanai.Interview.AppHost.csproj" Type="Classic C#" />
-    <Project Path="Architecture\aspire\ServiceDefaults\Wangkanai.Interview.ServiceDefaults.csproj" Type="Classic C#" />
-  </Folder>
   <Folder Name="/Aspire/">
+    <Project Path="Aspire\AppHost\Wangkanai.Interview.AppHost.csproj" Type="Classic C#" />
+    <Project Path="Aspire\ServiceDefaults\Wangkanai.Interview.ServiceDefaults.csproj" Type="Classic C#" />
     <File Path="Aspire\readme.md" />
   </Folder>
+  <Project Path="src\Application\Wangkanai.Interview.Portal.Application.csproj" Type="Classic C#" />
+  <Project Path="src\Client\Wangkanai.Interview.Portal.Client.csproj" Type="Classic C#" />
+  <Project Path="src\Domain\Wangkanai.Interview.Portal.Domain.csproj" Type="Classic C#" />
+  <Project Path="src\Infrastructure\Wangkanai.Interview.Portal.Infrastructure.csproj" Type="Classic C#" />
+  <Project Path="src\Migration\Wangkanai.Interview.Portal.Migration.csproj" Type="Classic C#" />
+  <Project Path="src\Server\Wangkanai.Interview.Portal.csproj" Type="Classic C#" />
 </Solution>
