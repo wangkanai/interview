@@ -4,6 +4,8 @@ using HealthChecks.NpgSql;
 
 using Wangkanai.Interview.AppHost.Hosting;
 
+using HealthCheckAnnotation = Wangkanai.Interview.AppHost.Hosting.HealthCheckAnnotation;
+
 namespace Wangkanai.Interview.AppHost.Extensions;
 
 public static class PostgreSqlHealthCheckExtensions

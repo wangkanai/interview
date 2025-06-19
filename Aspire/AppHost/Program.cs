@@ -21,8 +21,6 @@ var migration = builder.AddProject<Projects.Wangkanai_Interview_Portal_Migration
 builder.AddProject<Projects.Wangkanai_Interview_Portal>(ResourceConstants.WebPortal)
        .WithReference(dbPortal)
        .WithReference(seq)
-       .WithExternalHttpEndpoints()
-       .WaitFor(dbPortal)
-       .WaitFor(migration);
+       .WithExternalHttpEndpoints();
 
 builder.Build().Run();

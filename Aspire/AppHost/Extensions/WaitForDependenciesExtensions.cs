@@ -13,6 +13,8 @@ using Polly.Retry;
 
 using Wangkanai.Interview.AppHost.Hosting;
 
+using HealthCheckAnnotation = Wangkanai.Interview.AppHost.Hosting.HealthCheckAnnotation;
+
 namespace Wangkanai.Interview.AppHost.Extensions;
 
 public static class WaitForDependenciesExtensions
@@ -133,7 +135,7 @@ public static class WaitForDependenciesExtensions
                     {
                         State = new("Waiting", KnownResourceStateStyles.Info)
                     });
-                    
+
                     await Task.WhenAll(dependencies).WaitAsync(context.CancellationToken);
                 }));
             }
