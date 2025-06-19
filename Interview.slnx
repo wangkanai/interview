@@ -17,7 +17,6 @@
   <Folder Name="/Aspire/">
     <Project Path="Aspire\AppHost\Wangkanai.Interview.AppHost.csproj" Type="Classic C#" />
     <Project Path="Aspire\ServiceDefaults\Wangkanai.Interview.ServiceDefaults.csproj" Type="Classic C#" />
-    <File Path="Aspire\readme.md" />
   </Folder>
   <Project Path="src\Application\Wangkanai.Interview.Portal.Application.csproj" Type="Classic C#" />
   <Project Path="src\Client\Wangkanai.Interview.Portal.Client.csproj" Type="Classic C#" />
