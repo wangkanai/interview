@@ -25,6 +25,12 @@ Best regards,
 
 Sarin Na Wangkanai
 
+## Vertical slice architecture
+
+The vertical slice architecture is a way to organize your codebase by features. 
+Each feature will have its own folder structure with domain, application, infrastructure, endpoint, and testing. 
+This will help you to focus on the feature you are working on and make it easier to find the code you need.
+
 ## Solution background
 
 During our code interview, you will be building a solution for managing projects and tasks. 
@@ -104,7 +110,3 @@ Our vertical slice architecture will be setup in the following project structure
 28. [Bonus] Seq Centralized structured Logs
 29. [Bonus] Stack trace debugging for root cause analyze
 30. [Bonus] Sql performance obtimization
-
-
-
-
